@@ -1,11 +1,13 @@
 import React from 'react';
-import Cards from '../src/Componentes/Cards'
+import Card from "./Componentes/Card"
+import pasteleriaRecetas from './Components_reload/api';
 
 
 function App() {
   return (
-    <Cards />
-  );
+    <Card info={pasteleriaRecetas[0]}>
+    </Card>
+  )
 }
 
 export default App;
