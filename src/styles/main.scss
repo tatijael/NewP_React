@@ -1,7 +1,9 @@
-@import "utils/_variables.scss";
+@import "./utils/variables";
 
 @import "./Layout/Base/reset";
 
-@import "componentes/_cards";
+@import "./componentes/cards";
 
 @import "./Layout/body.scss";
+
+@import "./componentes/cardConteiner";

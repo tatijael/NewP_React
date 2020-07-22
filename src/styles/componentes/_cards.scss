@@ -1,0 +1,85 @@
+.card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    // perspective: 1000px;
+    margin: 5px;
+   min-width: 300px;
+    
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    
+    
+}
+
+.card:hover .card-content{
+  transform: rotateY(180deg);
+ 
+
+}
+.card .card-back{
+  transform: rotateY(180deg);
+  background-color: $pink-card;
+  border-radius: 20px;
+  color: $font-text;
+  font-weight: bold;
+}
+.card .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.endulzante {
+  background-color: $pink-new;
+  border-radius: 20px;
+  color: $font-text;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.receta-nueva {
+  background-color: $pink-card;
+  border-radius: 20px;
+  color: $font-text;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  // border: 2px solid black;
+  
+}
+
+.card-tags {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  backface-visibility: hidden;
+}
+.card-description {
+  font-size: 20px;
+  margin: 40px 15px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.receta-titulo{
+  margin-top: 25px;
+}
