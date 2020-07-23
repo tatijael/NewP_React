@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const CardFront = ({ img, sinAzucar, nuevo }) => {
   return (
     <div className="card-front">

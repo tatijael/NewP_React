@@ -1,12 +1,15 @@
 import React from 'react';
 import { IoMdHeart, IoMdHeartHalf, IoMdHeartEmpty, IoIosStar, IoIosStarHalf, IoIosStarOutline, IoIosHourglass} from "react-icons/io";
+import Score from './Score';
 
 const CardBack = ({nombre, puntuacion, dificultad, tiempo}) =>{
     return (
         <div className='card-back'>
             <h1 className='receta-titulo'>{nombre}</h1>
-    <p className='card-description'>Puntuacion: {Puntuacion(puntuacion, 'heart')} </p>
-            <p className='card-description'>Dificultad: {Puntuacion(dificultad, 'stars')} </p>
+    {/* <p className='card-description'>Puntuacion: {Puntuacion(puntuacion, 'heart')} </p> */}
+    <p className='card-description'>Puntuacion: <Score score={puntuacion} icon="heart"/> </p>
+            {/* <p className='card-description'>Dificultad: {Puntuacion(dificultad, 'stars')} </p> */}
+            <p className='card-description'>Dificultad: <Score score={puntuacion} icon="start"/></p>
             <p className='card-description'>Tiempo:  {tiempo} <IoIosHourglass /></p>
         </div>
     );
